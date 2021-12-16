@@ -31,6 +31,7 @@ public class Main {
 
         Collections.shuffle(listC);
         System.out.println("Список С: " + listC + "\n");
+
         Collections.sort(listC, stringLengthComparator);
         for (String str : listC) {
             System.out.print("Список С: " + str + "\n");
