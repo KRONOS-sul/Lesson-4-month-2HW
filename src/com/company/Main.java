@@ -27,10 +27,10 @@ public class Main {
         listA.addAll(listB);
         listC.addAll(listA);
 
-
         Comparator<String> stringLengthComparator = new StringLengthComparator();
 
         Collections.shuffle(listC);
+        System.out.println("Список С: " + listC + "\n");
         Collections.sort(listC, stringLengthComparator);
         for (String str : listC) {
             System.out.print("Список С: " + str + "\n");
